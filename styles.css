@@ -12,41 +12,56 @@ body {
 }
 
 header {
-    background: #333;
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
     padding: 1em 0;
+    border-bottom: 1px solid #ccc;
 }
 
-header h1 {
-    text-align: center;
-    margin: 0;
+header .logo {
+    width: 150px;
 }
 
 nav ul {
     list-style: none;
-    text-align: center;
+    display: flex;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1em;
+    margin-left: 2em;
 }
 
 nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
 }
 
-.intro, .about, .research, .publications {
-    padding: 2em 0;
-    background: #f4f4f4;
-    margin-bottom: 1em;
+.social-icons {
+    display: flex;
 }
 
-.intro h2, .about h2, .research h2, .publications h2 {
+.social-icons a {
+    margin-left: 1em;
+}
+
+.hero {
     text-align: center;
+    padding: 4em 0;
+    background: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
 }
 
 footer {
@@ -54,7 +69,4 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 }
